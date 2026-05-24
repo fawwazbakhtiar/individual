@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - Wazgud E-Commerce Hub</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <!--Chart Js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+    <!--Header-->
+    <div class="container my-4">
+      <div class="title">Wazgud E-Commerce Hub</div>
+    </div>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+      <div class="container">
+
+        <!--Logo-->
+        <img src="img/logo.png" alt="Logo" width="50px">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+
+          <div class="nav-icons d-flex align-items-center gap-3 me-4">
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+          </div>
+
+          <!--Dark Mode-->
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+            <label class="form-check-label" for="darkModeToggle" id="themeLabel">
+              Dark Mode
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--About Hero-->
+    <section class="hero-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <span class="hero-tag">
+              About Our Brand
+            </span>
+            <h1 class="hero-title">
+              Fashion That Defines Your Lifestyle
+            </h1>
+            <p class="hero-text">
+              Wazgud E-Commerce Hub is a modern fashion platform created to bring
+              premium styles, trendy collections, and luxury fashion experiences
+              to customers around the world.
+            </p>
+            <div class="hero-btn-group">
+              <a href="#our-story" class="btn btn-secondary btn-lg px-4">
+                Learn More
+              </a>
+              <a href="shop.html" class="btn btn-outline-secondary btn-lg px-4">
+                Shop Now
+              </a>
+            </div>
+          </div>
+          
+            <!--Image-->
+          <div class="col-lg-6 text-center mt-5 mt-lg-0">
+            <div class="hero-image-placeholder border-0">
+              <img src="img/mainpic3.jpg" alt="mainpic3" class="img-fluid rounded shadow">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Our Story-->
+    <section class="py-5" id="our-story">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+
+            <!--Story Image-->
+            <div class="hero-image-placeholder border-0">
+              <img src="img/story.jpg" alt="story" class="img-fluid rounded shadow">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="section-title mb-4">
+              <h2>Our Story</h2>
+            </div>
+            <p class="hero-text">
+              Founded with a passion for fashion and creativity,
+              Wazgud E-Commerce Hub was built to create a shopping
+              experience that combines modern trends, premium quality,
+              and affordable luxury.
+            </p>
+            <p class="hero-text">
+              We believe fashion is more than just clothing.
+              It is a form of self-expression that allows everyone
+              to feel confident, stylish, and unique.
+            </p>
+            <div class="row mt-4">
+              <div class="col-6">
+                <div class="feature-box text-center">
+                  <h3>10K+</h3>
+                  <p>Happy Customers</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="feature-box text-center">
+                  <h3>500+</h3>
+                  <p>Fashion Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Mission & Vision-->
+    <section class="categories py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Mission & Vision</h2>
+          <p>
+            What drives our passion in the fashion industry.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="category-card h-100">
+              <div class="category-content text-center">
+                <i class="fa-solid fa-bullseye fa-3x mb-4"></i>
+                <h3>Our Mission</h3>
+                <p class="mt-3">
+                  To provide high-quality fashion collections
+                  that empower confidence, creativity, and individuality
+                  for everyone.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="category-card h-100">
+              <div class="category-content text-center">
+                <i class="fa-solid fa-eye fa-3x mb-4"></i>
+                <h3>Our Vision</h3>
+                <p class="mt-3">
+                  To become one of the leading global fashion
+                  e-commerce platforms known for innovation,
+                  quality, and customer satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Why Choose Us-->
+    <section class="why-us py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Why Choose Us</h2>
+          <p>
+            Experience premium fashion shopping with exclusive benefits.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card shadow bg-body-tertiary border-0">
+            <div class="card-body">
+              <div>
+                <canvas id="chart1"></canvas>
+                <script>
+  const chart1 = document.getElementById('chart1');
+
+  new Chart(chart1, {
+    type: 'bar',
+    data: {
+      labels: ['Excellent', 'Good', 'Average', 'Poor'],
+      datasets: [{
+        label: 'Customer Satisfaction Chart',
+        data: [72, 20, 6, 2],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow bg-body-tertiary border-0">
+            <div class="card-body">
+<canvas id="chart2"></canvas>
+                <script>
+  const chart2 = document.getElementById('chart2');
+
+  new Chart(chart2, {
+    type: 'line',
+    data: {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+      datasets: [{
+        label: 'Sales Growth Chart',
+        data: [12000, 18000, 25000, 32000, 40000],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow bg-body-tertiary border-0">
+            <div class="card-body">
+<canvas id="chart3"></canvas>
+                <script>
+  const chart3 = document.getElementById('chart3');
+
+  new Chart(chart3, {
+    type: 'line',
+    data: {
+      labels: ['Hoodies', 'Sneakers', 'Watches', 'Handbags'],
+      datasets: [{
+        label: 'Top Product Categories Chart',
+        data: [15, 3,25, 10, 40],
+        borderWidth: 1,
+        stepped: true,
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Team Section-->
+    <section class="py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Meet Our Team</h2>
+          <p>
+            The creative people behind Wazgud E-Commerce Hub.
+          </p>
+        </div>
+        
+        <!--Team Member-->
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="product-card text-center">
+              <div class="product-image border-0">
+                <img src="img/person1.jpg" alt="person1" class="img-fluid rounded shadow">
+              </div>
+              <div class="product-content">
+                <h5>Founder & CEO</h5>
+                <p class="hero-text">
+                  Creative leader with passion for modern fashion and branding.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Team Member-->
+          <div class="col-lg-4">
+            <div class="product-card text-center">
+              <div class="product-image border-0">
+                <img src="img/person2.jpg" alt="person2" class="img-fluid rounded shadow">
+              </div>
+              <div class="product-content">
+                <h5>Creative Designer</h5>
+                <p class="hero-text">
+                  Responsible for creating stylish and trendy fashion concepts.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Team Member-->
+          <div class="col-lg-4">
+            <div class="product-card text-center">
+              <div class="product-image border-0">
+                <img src="img/person3.jpg" alt="person3" class="img-fluid rounded shadow">
+              </div>
+              <div class="product-content">
+                <h5>Marketing Manager</h5>
+                <p class="hero-text">
+                  Expert in digital marketing and customer engagement strategies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Fashion Banner-->
+    <section class="promo-banner">
+      <div class="container text-center">
+        <h2>Join Our Fashion Journey</h2>
+        <p>
+          Explore premium fashion collections designed for modern lifestyles.
+        </p>
+        <a href="shop.html" class="btn btn-light btn-lg px-5 mt-3">
+          Start Shopping
+        </a>
+      </div>
+    </section>
+
+    <!--Newsletter-->
+    <section class="newsletter-section py-5">
+      <div class="container text-center">
+        <h2>Stay Connected With Us</h2>
+        <p>
+          Subscribe for latest updates, fashion trends, and exclusive promotions.
+        </p>
+        <div class="newsletter-form mt-4">
+          <input type="email" placeholder="Enter your email address">
+          <button>
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h4>Wazgud E-Commerce Hub</h4>
+            <p>
+              Your trusted online platform for premium fashion,
+              lifestyle collections, and modern shopping experiences.
+            </p>
+          </div>
+          <div class="col-lg-2">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5>Customer Service</h5>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5>Follow Us</h5>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="text-center copyright">
+          <p>
+            © 2026 Wazgud E-Commerce Hub. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Dark Mode-->
+    <script>
+      function setTheme(theme){
+        document.documentElement.setAttribute("data-bs-theme", theme);
+        localStorage.setItem("theme",theme);
+        document.getElementById("themeLabel").innerText =
+        theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+      }
+
+      document
+      .getElementById("darkModeToggle")
+      .addEventListener("change", function (event) {
+        if (event.target.checked) {
+          setTheme("dark");
+        } else {
+          setTheme("");
+        }
+      });
+
+      window.onload = function () {
+        let savedTheme = localStorage.getItem("theme");
+        if(savedTheme) {
+          setTheme(savedTheme);
+          if (savedTheme === "dark") {
+            document.getElementById("darkModeToggle").checked = true;
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

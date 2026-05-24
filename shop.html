@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop - Wazgud E-Commerce Hub</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+    <!--Header-->
+    <div class="container my-4">
+      <div class="title">Wazgud E-Commerce Hub</div>
+    </div>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+      <div class="container">
+
+        <!--Logo-->
+        <img src="img/logo.png" alt="Logo" width="50px">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+
+          <div class="nav-icons d-flex align-items-center gap-3 me-4">
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+          </div>
+
+          <!--Dark Mode-->
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+            <label class="form-check-label" for="darkModeToggle" id="themeLabel">
+              Dark Mode
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Shop Hero-->
+    <section class="shop-hero py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <span class="hero-tag">
+              Fashion Shopping Experience
+            </span>
+            <h1 class="hero-title">
+              Shop The Latest Fashion Trends
+            </h1>
+            <p class="hero-text">
+              Discover modern fashion collections, stylish outfits,
+              luxury accessories, and premium streetwear for your lifestyle.
+            </p>
+            <div class="hero-btn-group">
+              <a href="#shop-products" class="btn btn-secondary btn-lg px-4">
+                Start Shopping
+              </a>
+              <a href="#" class="btn btn-outline-secondary btn-lg px-4">
+                View Collections
+              </a>
+            </div>
+          </div>
+
+            <!--Image-->
+            <div class="col-lg-6 text-center mt-5 mt-lg-0">
+            <div class="hero-image-placeholder border-0">
+              <img src="img/mainpic2.jpg" alt="mainpic2" class="img-fluid rounded shadow">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Shopping Features-->
+    <section class="why-us py-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md-3">
+            <div class="feature-box">
+              <i class="fa-solid fa-truck-fast"></i>
+              <h5>Fast Delivery</h5>
+              <p>
+                Nationwide delivery with secure shipping service.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-box">
+              <i class="fa-solid fa-shield-heart"></i>
+              <h5>Trusted Quality</h5>
+              <p>
+                High-quality fashion collections from trusted brands.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="feature-box">
+              <i class="fa-solid fa-credit-card"></i>
+              <h5>Secure Payment</h5>
+              <p>
+                Easy and secure online payment methods available.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="feature-box">
+              <i class="fa-solid fa-headset"></i>
+              <h5>24/7 Support</h5>
+              <p>
+                Friendly customer support anytime you need help.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Shop Categories-->
+    <section class="categories py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Popular Shopping Categories</h2>
+          <p>
+            Browse your favourite fashion styles and collections.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="category-card">
+              <div class="product-image border-0">
+                <img src="img/man1.jpg" alt="man1" class="img-fluid rounded shadow">
+              </div>
+              <div class="category-content">
+                <h4>Men Collection</h4>
+                <p>
+                  Modern streetwear, smart casual outfits, and premium fashion for men.
+                </p>
+                <a href="#" class="btn btn-dark mt-3">
+                  Shop Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="category-card">
+              <div class="product-image border-0">
+                <img src="img/woman1.jpg" alt="woman1" class="img-fluid rounded shadow">
+              </div>
+              <div class="category-content">
+                <h4>Women Collection</h4>
+                <p>
+                  Elegant fashion styles and luxury outfits for modern women.
+                </p>
+                <a href="#" class="btn btn-dark mt-3">
+                  Shop Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="category-card">
+              <div class="product-image border-0">
+                <img src="img/luxuryaccess1.jpg" alt="luxuryaccess1" class="img-fluid rounded shadow">
+              </div>
+              <div class="category-content">
+                <h4>Luxury Accessories</h4>
+                <p>
+                  Premium bags, watches, jewellery, and fashion accessories.
+                </p>
+                <a href="#" class="btn btn-dark mt-3">
+                  Shop Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Featured Shop Products-->
+    <section class="featured-products py-5" id="shop-products">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Best Selling Products</h2>
+          <p>
+            Explore our most popular fashion items this season.
+          </p>
+        </div>
+        <div class="row g-4">
+          <!--Product Card-->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-image border-0">
+                <img src="img/hoodie.jpg" alt="hoodie" class="img-fluid rounded shadow">
+              </div>
+              <div class="product-content">
+                <div class="product-rating mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <h5>Premium Oversized Hoodie</h5>
+                <div class="product-price">
+                  RM159.00
+                </div>
+                <button class="btn btn-dark w-100 mt-3">
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--Product Card-->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-image border-0">
+                <img src="img/handbag.jpg" alt="handbag" class="img-fluid rounded shadow">
+              </div>
+              <div class="product-content">
+                <div class="product-rating mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+                <h5>Luxury Handbag Collection</h5>
+                <div class="product-price">
+                  RM249.00
+                </div>
+                <button class="btn btn-dark w-100 mt-3">
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--Product Card-->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">              
+              <div class="product-image border-0">
+                <img src="img/sneakers.jpg" alt="sneakers" class="img-fluid rounded shadow">
+              </div>
+              <div class="product-content">
+                <div class="product-rating mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+                <h5>Classic Black&White Sneakers</h5>
+                <div class="product-price">
+                  RM319.00
+                </div>
+                <button class="btn btn-dark w-100 mt-3">
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--Product Card-->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-card">
+              <div class="product-image border-0">
+                <img src="img/watch.jpg" alt="watch" class="img-fluid rounded shadow">
+              </div>
+              <div class="product-content">
+                <div class="product-rating mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+                <h5>Minimalist Fashion Watch</h5>
+                <div class="product-price">
+                  RM399.00
+                </div>
+                <button class="btn btn-dark w-100 mt-3">
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Fashion Banner-->
+    <section class="promo-banner">
+      <div class="container text-center">
+        <h2>Exclusive Shopping Deals</h2>
+        <p>
+          Enjoy up to 50% discounts on selected fashion collections.
+        </p>
+        <a href="#" class="btn btn-light btn-lg px-5 mt-3">
+          Explore Deals
+        </a>
+      </div>
+    </section>
+
+    <!--Shopping Gallery-->
+    <section class="py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Fashion Inspiration</h2>
+          <p>
+            Style inspiration from our latest fashion trends.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="product-image border-0">
+                <img src="img/fashioninspi1.jpg" alt="fashioninspi1" class="img-fluid rounded shadow">
+              </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product-image border-0">
+                <img src="img/fashioninspi2.jpg" alt="fashioninspi2" class="img-fluid rounded shadow">
+              </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product-image border-0">
+                <img src="img/fashioninspi3.jpg" alt="fashioninspi3" class="img-fluid rounded shadow">
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Newsletter-->
+    <section class="newsletter-section py-5">
+      <div class="container text-center">
+        <h2>Subscribe For Latest Updates</h2>
+        <p>
+          Get exclusive promotions, fashion tips, and product releases directly to your email.
+        </p>
+        <div class="newsletter-form mt-4">
+          <input type="email" placeholder="Enter your email address">
+          <button>
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h4>Wazgud E-Commerce Hub</h4>
+            <p>
+              Your trusted fashion shopping platform for modern lifestyle collections.
+            </p>
+          </div>
+          <div class="col-lg-2">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h5>Customer Service</h5>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h5>Follow Us</h5>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="text-center copyright">
+          <p>
+            © 2026 Wazgud E-Commerce Hub. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Dark Mode-->
+    <script>
+
+      function setTheme(theme){
+        document.documentElement.setAttribute("data-bs-theme", theme);
+        localStorage.setItem("theme",theme);
+        document.getElementById("themeLabel").innerText =
+        theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+      }
+
+      document
+      .getElementById("darkModeToggle")
+      .addEventListener("change", function (event) {
+        if (event.target.checked) {
+          setTheme("dark");
+        } else {
+          setTheme("");
+        }
+      });
+
+      window.onload = function () {
+        let savedTheme = localStorage.getItem("theme");
+        if(savedTheme) {
+          setTheme(savedTheme);
+          if (savedTheme === "dark") {
+            document.getElementById("darkModeToggle").checked = true;
+          }
+        }
+      };
+    </script>
+
+  </body>
+</html>

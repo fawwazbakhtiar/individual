@@ -1,0 +1,275 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.login {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: 40px;
+  text-transform: uppercase;
+  color: transparent;
+  background: linear-gradient(
+    135deg, #cd6444, #694f47, #dba290
+  );
+  background-size: 500px 100%;
+  background-clip: text;
+}
+
+.title {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: 35px;
+  text-transform: uppercase;
+  color: transparent;
+  background: linear-gradient(
+    135deg, #cd6444, #694f47, #dba290
+  );
+  background-size: 500px 100%;
+  background-clip: text;
+  font-size: 2.2rem;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+}
+
+.nav-link {
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.nav-icons a {
+  color: inherit;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.nav-icons a:hover {
+  color: #cd6444;
+}
+
+.hero-section {
+  padding: 80px 0;
+}
+
+.hero-tag {
+  display: inline-block;
+  background-color: #f5e6df;
+  color: #cd6444;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.hero-btn-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-image-placeholder,
+.category-image,
+.product-image {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  border: 2px dashed #ccc;
+}
+
+.hero-image-placeholder i,
+.category-image i,
+.product-image i {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.section-title p {
+  color: gray;
+}
+
+.category-card,
+.product-card,
+.feature-box {
+  background: rgb(218, 161, 115);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.category-card:hover,
+.product-card:hover,
+.feature-box:hover {
+  transform: translateY(-10px);
+}
+
+.category-content,
+.product-content {
+  padding: 25px;
+}
+
+.product-price {
+  color: #cd6444;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.promo-banner {
+  background: linear-gradient(135deg, #cd6444, #694f47);
+  padding: 80px 20px;
+  color: white;
+}
+
+.promo-banner h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.feature-box {
+  padding: 40px 20px;
+}
+
+.feature-box i {
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #cd6444;
+}
+
+.newsletter-section {
+  background-color: rgb(233, 179, 140);
+}
+
+.newsletter-form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.newsletter-form input {
+  width: 100%;
+  border: none;
+  padding: 18px 25px;
+  outline: none;
+}
+
+.newsletter-form button {
+  border: none;
+  background-color: #cd6444;
+  color: white;
+  padding: 0 35px;
+  font-weight: 600;
+}
+
+.footer-section {
+  background-color: #111;
+  color: white;
+  padding: 70px 0 20px;
+}
+
+.footer-section h4,
+.footer-section h5 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: white;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  margin-right: 10px;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #cd6444;
+}
+
+.copyright {
+  margin-top: 20px;
+  color: #aaa;
+}
+
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-image-placeholder,
+  .category-image,
+  .product-image {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .newsletter-form button {
+    padding: 15px;
+  }
+}

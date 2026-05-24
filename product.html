@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products - Wazgud E-Commerce Hub</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+    <!--Header-->
+    <div class="container my-4">
+      <div class="title">Wazgud E-Commerce Hub</div>
+    </div>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+      <div class="container">
+
+        <!--Logo-->
+        <img src="img/logo.png" alt="Logo" width="50px">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+
+          <div class="nav-icons d-flex align-items-center gap-3 me-4">
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+          </div>
+
+          <!--Dark Mode-->
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="darkModeToggle">
+            <label class="form-check-label" for="darkModeToggle" id="themeLabel">Dark Mode</label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Content-->
+    <div class="container">
+      <div class="row my-4">
+        <div class="col-md-3">
+          <div class="form-floating mb-3">
+              <input type="Product" class="form-control bg-body-tertiary" id="floatingProduct" placeholder="Product">
+              <label for="floatingProduct">Search Product</label>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-floating">
+          <select class="form-select bg-body-tertiary" id="floatingSelect" aria-label="Floating label select example">
+            <option selected>Select Category</option>
+            <option value="1">Men's Fashion</option>
+            <option value="2">Woman's Fashion</option>
+            <option value="3">Accessories</option>
+          </select>
+          <label for="floatingSelect">Category</label>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-floating mb-3">
+              <input type="Brands" class="form-control bg-body-tertiary" id="floatingBrands" placeholder="Brands">
+              <label for="floatingBrands">Search Brands</label>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-floating">
+          <select class="form-select bg-body-tertiary" id="floatingSelect" aria-label="Floating label select example">
+            <option selected>Select Type</option>
+            <option value="1">Brand New</option>
+            <option value="2">Preloved</option>
+          </select>
+          <label for="floatingSelect">Type</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Featured Categories-->
+    <section class="categories py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Top Categories</h2>
+          <p>Explore products based on your favourite style.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="category-card">
+              <div class="product-image border-0">
+                <img src="img/fashioninspi3.jpg" alt="fashioninspi3" class="img-fluid rounded shadow">
+              </div>
+              <div class="category-content text-center">
+                <h5>Men Fashion</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="category-card">
+              <div class="product-image border-0">
+                <img src="img/fashioninspi1.jpg" alt="fashioninspi1" class="img-fluid rounded shadow">
+              </div>
+              <div class="category-content text-center">
+                <h5>Women Fashion</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="category-card">
+              <div class="product-image border-0">
+                <img src="img/sneakers.jpg" alt="sneakers" class="img-fluid rounded shadow">
+              </div>
+              <div class="category-content text-center">
+                <h5>Shoes</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="category-card">
+              <div class="product-image border-0">
+                <img src="img/luxuryaccess1.jpg" alt="luxuryaccess1" class="img-fluid rounded shadow">
+              </div>
+              <div class="category-content text-center">
+                <h5>Accessories</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Products-->
+    <section class="featured-products py-5" id="products">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Trending Products</h2>
+          <p>Most popular products chosen by our customers.</p>
+        </div>
+
+        <!--Product Card-->
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <a href="detail1.html" class="text-decoration-none text-dark">
+          <div class="product-card">
+              <div class="product-image border-0">
+                <img src="img/hoodie.jpg" alt="hoodie" class="img-fluid rounded shadow">
+              </div>
+
+          <div class="product-content">
+            <div class="product-rating mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <h5>Premium Street Hoodie</h5>
+              <div class="product-price">
+                RM159.00
+              </div>
+              <button class="btn btn-dark w-100 mt-3">
+              Add To Cart
+              </button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+          <!--Product Card-->
+          <div class="col-lg-3 col-md-6">
+            <a href="detail2.html" class="text-decoration-none text-dark">
+          <div class="product-card">
+              <div class="product-image border-0">
+                <img src="img/handbag.jpg" alt="handbag" class="img-fluid rounded shadow">
+              </div>
+
+          <div class="product-content">
+            <div class="product-rating mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <h5>Luxery Leather Handbag</h5>
+              <div class="product-price">
+                RM239.00
+              </div>
+              <button class="btn btn-dark w-100 mt-3">
+              Add To Cart
+              </button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+          <!--Product Card-->
+          <div class="col-lg-3 col-md-6">
+            <a href="detail3.html" class="text-decoration-none text-dark">
+          <div class="product-card">
+              <div class="product-image border-0">
+                <img src="img/sneakers.jpg" alt="sneakers" class="img-fluid rounded shadow">
+              </div>
+
+          <div class="product-content">
+            <div class="product-rating mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <h5>Classic White Sneakers</h5>
+              <div class="product-price">
+                RM299.00
+              </div>
+              <button class="btn btn-dark w-100 mt-3">
+              Add To Cart
+              </button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+          <!--Product Card-->
+          <div class="col-lg-3 col-md-6">
+            <a href="detail4.html" class="text-decoration-none text-dark">
+          <div class="product-card">
+              <div class="product-image border-0">
+                <img src="img/watch.jpg" alt="watch" class="img-fluid rounded shadow">
+              </div>
+
+          <div class="product-content">
+            <div class="product-rating mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <h5>Elegent Fashion Watch</h5>
+              <div class="product-price">
+                RM359.00
+              </div>
+              <button class="btn btn-dark w-100 mt-3">
+              Add To Cart
+              </button>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+    <!--Promo Banner-->
+    <section class="promo-banner">
+      <div class="container text-center">
+        <h2>Special Fashion Deals</h2>
+        <p>
+          Grab exclusive discounts up to 50% for selected collections.
+        </p>
+        <a href="#" class="btn btn-light btn-lg px-5 mt-3">
+          Shop Now
+        </a>
+      </div>
+    </section>
+
+    <!--Newsletter-->
+    <section class="newsletter-section py-5">
+      <div class="container text-center">
+        <h2>Stay Updated</h2>
+        <p>
+          Subscribe for latest product releases and exclusive promotions.
+        </p>
+        <div class="newsletter-form mt-4">
+          <input type="email" placeholder="Enter your email address">
+          <button>
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h4>Wazgud E-Commerce Hub</h4>
+            <p>
+              Your trusted online platform for premium fashion and lifestyle products.
+            </p>
+          </div>
+
+          <div class="col-lg-2">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h5>Customer Service</h5>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h5>Follow Us</h5>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="text-center copyright">
+          <p>© 2026 Wazgud E-Commerce Hub. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Dark Mode-->
+    <script>
+      function setTheme(theme){
+        document.documentElement.setAttribute("data-bs-theme", theme);
+        localStorage.setItem("theme",theme);
+
+        document.getElementById("themeLabel").innerText =
+          theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+      }
+
+      document
+        .getElementById("darkModeToggle")
+        .addEventListener("change", function (event) {
+
+          if (event.target.checked) {
+            setTheme("dark");
+          } else {
+            setTheme("");
+          }
+        });
+
+      window.onload = function () {
+        let savedTheme = localStorage.getItem("theme");
+        if(savedTheme) {
+          setTheme(savedTheme);
+          if (savedTheme === "dark") {
+            document.getElementById("darkModeToggle").checked = true;
+          }
+        }
+      };
+    </script>
+
+  </body>
+</html>
